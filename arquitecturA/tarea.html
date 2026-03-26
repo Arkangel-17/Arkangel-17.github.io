@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Particiones - Proyecto Estudiantil</title>
+    <link rel="stylesheet" href="url.css">
+</head>
+<body>
+
+    <div id="contenedor">
+        
+        <header>
+            <h1>Sistemas de Archivos</h1>
+        </header>
+
+        <nav>
+            <h2>Guía de Particiones y Discos</h2>
+        </nav>
+
+        <section id="contenido">
+            <h2>Estructura por Sistema</h2>
+            
+            <p>La organización de un disco duro define cómo se almacenan y gestionan los datos según el tipo de Sistema Operativo seleccionado:</p>
+            
+            <ul>
+                <li><strong>Sistemas Libres (Linux):</strong> Utilizan formatos avanzados como <b>Ext4</b>. La estructura es jerárquica y nace de un punto principal llamado raíz. Es común separar los archivos del sistema de los datos personales del usuario para mayor seguridad.</li>
+                <li><strong>Sistemas Propietarios (Windows):</strong> Utilizan principalmente el sistema <b>NTFS</b>. La organización se basa en unidades lógicas identificadas por letras, como la unidad C para el sistema y la unidad D para datos adicionales.</li>
+                <li><strong>Sistemas Propietarios (macOS):</strong> Implementan el formato <b>APFS</b>, diseñado específicamente para maximizar la velocidad y eficiencia en discos de estado sólido (SSD).</li>
+            </ul>
+            
+            <p>Es importante destacar que cada sistema tiene su propia forma de gestionar los permisos de escritura y lectura, lo que influye directamente en la seguridad de la información.</p>
+        </section>
+
+        <aside>
+            <h2>Tablas: GPT y MBR</h2>
+            <p><strong>MBR:</strong> Es el estándar clásico de arranque. Tiene limitaciones importantes, como soportar discos de máximo 2 terabytes y permitir un límite de solo 4 particiones primarias.</p>
+            <br>
+            <p><strong>GPT:</strong> Es el estándar moderno vinculado a la tecnología UEFI. Soporta discos de tamaño masivo y permite hasta 128 particiones de forma nativa, siendo mucho más robusto contra la corrupción de datos.</p>
+        </aside>
+
+        <footer>
+            <h2>Tarea de Arquitectura del Computador - Adrianyelo Lopez</h2>
+        </footer>
+
+    </div>
+
+</body>
+</html>
